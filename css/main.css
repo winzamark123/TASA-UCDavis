@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.hero-bg {
+    background-color: #307D99;
+}
+
+:root{
+    --primary: #25abd9;
+}
+
+.button{
+    background-color: #111;
+    border: none;
+    border-radius: 26px;
+    box-shadow: 0 5px 15px - 5px #111;
+    cursor: pointer;
+    font-family: roboto;
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+    transition: text-shadow 0.5s ease;
+    padding: 5px;
+    
+}
+
+.button_icon{
+    color: #777;
+    transition: color 0.5s ease-out;
+}
+
+.button:hover{
+    animation: glow 1s infinite alternate;
+    text-shadow: 0 0 15px var(--primary);
+}
+
+.button:hover .button_icon{
+    color: var(--primary);
+}
+
+@keyframes glow{
+    0%{
+        box-shadow: 0 0 10px var(--primary);
+    }
+
+    100% {
+        box-shadow: 0 0 25px var(--primary);
+    }
+}

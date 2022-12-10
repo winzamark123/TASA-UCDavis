@@ -13,7 +13,12 @@ body {
     --primary: #25abd9;
 }
 
+.container-top{
+    background-color: rgb(0, 0, 0);
+}
+
 .button{
+    vertical-align: top;
     background-color: #111;
     border: none;
     border-radius: 26px;

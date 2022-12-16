@@ -1,9 +1,58 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: black;
+    height: 90px;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+.cta{
+    margin-left: 20px;
+    vertical-align:bottom;
+    transition: all 0.3s ease 0s;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.logo{
+    margin-right: 330px;
+    color: white;
+}
+
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 px 20px;
+}
+
+
 
 .hero-bg {
     background-color: #307D99;
@@ -15,9 +64,11 @@ body {
 
 .container-top{
     background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
 }
 
-.button{
+.button-logo{
     vertical-align: top;
     background-color: #111;
     border: none;
@@ -25,8 +76,8 @@ body {
     box-shadow: 0 5px 15px - 5px #111;
     cursor: pointer;
     font-family: roboto;
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     overflow: hidden;
     transition: text-shadow 0.5s ease;
     padding: 5px;
@@ -38,7 +89,7 @@ body {
     transition: color 0.5s ease-out;
 }
 
-.button:hover{
+.button-logo:hover{
     animation: glow 1s infinite alternate;
     text-shadow: 0 0 15px var(--primary);
 }
@@ -55,4 +106,13 @@ body {
     100% {
         box-shadow: 0 0 25px var(--primary);
     }
+}
+
+button{
+    padding: 9px 25px;
+    background-color: #25abd9;
+    border: none;
+    border-radius: 50px;
+
+
 }

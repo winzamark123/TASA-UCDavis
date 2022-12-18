@@ -20,7 +20,6 @@ header{
     align-items: center;
     padding: 30px 10px;
     background-color: black;
-    height: 90px;
 }
 
 body {
@@ -38,7 +37,7 @@ body {
 
 
 .logo{
-    margin-right: 330px;
+    margin-left: flex;
     color: white;
 }
 
@@ -50,12 +49,6 @@ body {
 .nav_links li {
     display: inline-block;
     padding: 0 px 20px;
-}
-
-
-
-.hero-bg {
-    background-color: #307D99;
 }
 
 :root{
@@ -115,4 +108,8 @@ button{
     border-radius: 50px;
 
 
+}
+
+.main-bg{
+    background-color: #777;
 }

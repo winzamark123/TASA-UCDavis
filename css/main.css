@@ -25,7 +25,7 @@ nav{
     display: flex;
     height: 80px;
     width: 100%;
-    background: #1b1b1b;
+    background: #000000;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
@@ -81,7 +81,7 @@ nav{
 
 .button-logo{
     vertical-align: top;
-    background-color: #111;
+    background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 26px;
     box-shadow: 0 5px 15px - 5px #111;

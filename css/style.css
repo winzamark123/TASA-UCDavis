@@ -3,16 +3,10 @@
 *{
     padding: 0;
     margin: 0;
+    outline: none;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-li, a, button{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
 }
 
 body, html {
@@ -22,26 +16,18 @@ body, html {
 }
 
 nav{
-    display: flex;
-    height: 80px;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
     background: #000000;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 100px;
-    flex-wrap: wrap;
+    width: 60px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0,0,0);
 }
 
-
-
-
-
-.container-top{
-    background-color: rgb(0, 0, 0);
-    display:flex;
-    margin: 0 auto;
-    width: 100%;
-}
 
 .cta{
     vertical-align: text-top;
@@ -68,10 +54,11 @@ nav{
 .nav_links li {
     display: inline-block;
     padding: 0 px 20px;
+    margin-left: 5px;
 }
 
 :root{
-    --primary: #25abd9;
+    --primary: #f2bf30;
 }
 
 
@@ -96,7 +83,7 @@ nav{
 }
 
 .button_icon{
-    color: #777;
+    color: rgb(255, 255, 255);
     transition: color 0.5s ease-out;
 }
 

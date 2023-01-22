@@ -9,13 +9,26 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary: aqua;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #111;
+}
+
 body, html {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     height: 100%;
 }
 
-nav{
+/* nav{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -26,60 +39,46 @@ nav{
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0,0,0);
+} */
+.tasa_logo{
+    margin-right: auto;
 }
-
-
-.cta{
-    vertical-align: text-top;
-    transition: all 0.3s ease 0s;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-}
-
-
-.logo{
-    vertical-align: text-top;
-    font-size: larger;
-    margin-left: flex;
-    color: white;
-}
-
-
 
 .nav_links{
     list-style: none;
 }
 
-.nav_links li {
+.nav_links li{
     display: inline-block;
-    padding: 0 px 20px;
-    margin-left: 5px;
+    padding: 0px 20px;
 }
 
-:root{
-    --primary: #f2bf30;
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    color:rgb(255, 255, 255);
+}
+
+.nav_links li a:hover{
+    color: aqua;
 }
 
 
-.full-width{
-    flex-basis: 100%;
-}
 
-.button-logo{
-    vertical-align: top;
-    background-color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 26px;
-    box-shadow: 0 5px 15px - 5px #111;
-    cursor: pointer;
-    font-family: roboto;
-    height: 50px;
-    width: 50px;
-    overflow: hidden;
-    transition: text-shadow 0.5s ease;
-    padding: 5px;
+.main-bg{
+    background-image: url('../images/TASA_Pumpkin.jpg');
+    height: 100%;
     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 70%;
+
+}
+
+/* BUTTON EFFECTS*/
+/*-----------------------------------------------*/
+.button-logo{
+    margin-left: 20px;
 }
 
 .button_icon{
@@ -106,21 +105,19 @@ nav{
     }
 }
 
-button{
-    padding: 9px 25px;
-    background-color: #25abd9;
+.button-logo{
+    vertical-align: top;
+    background-color: rgb(0, 0, 0);
     border: none;
-    border-radius: 50px;
-
-
-}
-
-.main-bg{
-    background-image: url('../images/TASA_Pumpkin.jpg');
-    height: 100%;
+    border-radius: 26px;
+    box-shadow: 0 5px 15px - 5px #111;
+    cursor: pointer;
+    font-family: roboto;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    transition: text-shadow 0.5s ease;
+    padding: 5px;
     
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
+/*-----------------------------------------------*/

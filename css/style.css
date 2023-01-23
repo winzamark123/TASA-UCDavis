@@ -13,7 +13,27 @@
     --primary: aqua;
 }
 
+
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+
+/* .flex{
+    display: flex;
+    gap: var(--gap, 5rem);
+} */
+
+
+
+
+/* Navigation Bar */
+/*-----------------------------------------------*/
 header{
+    list-style: none;
     height: 100px;
     display: flex;
     justify-content: flex-end;
@@ -22,24 +42,6 @@ header{
     background-color: #111;
 }
 
-body, html {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    height: 100%;
-}
-
-/* nav{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    background: #000000;
-    width: 60px;
-    overflow: hidden;
-    transition: width 0.2s linear;
-    box-shadow: 0 20px 35px rgba(0, 0,0,0);
-} */
 .tasa_logo{
     margin-right: auto;
 }
@@ -62,6 +64,40 @@ body, html {
     color: aqua;
 }
 
+@media (max-width: 35em){
+    .nav_links{
+        z-index: 1000;
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: black;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        background-color: hsl(0 0% 0% / 0.5);
+    }
+
+    .nav_links li{
+        margin: 1em;
+    }
+
+    .mobile-nav-toggle{
+        position: absolute;
+        z-index: 9999;
+        background: red;
+        width: 1rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+@supports(backdrop-filter: blur(1rem)){
+    .nav_links{
+        background-color: hsl(0 0% 0% / 0.75);
+        backdrop-filter: blur(1rem);
+    }
+}
+/*-----------------------------------------------*/
 
 
 .main-bg{
@@ -71,8 +107,17 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 70%;
 
+}
+
+.officers-bg{
+    background-image: url('../images/officers.JPG');
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 70%;
 }
 
 /* BUTTON EFFECTS*/

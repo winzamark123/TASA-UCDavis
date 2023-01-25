@@ -19,6 +19,8 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     height: 100%;
+
+    overflow-x: hidden;
 }
 
 
@@ -32,6 +34,7 @@ body, html {
 
 /* Navigation Bar */
 /*-----------------------------------------------*/
+/*-----------------------------------------------*/
 header{
     list-style: none;
     height: 100px;
@@ -40,6 +43,10 @@ header{
     align-items: center;
     padding: 30px 10%;
     background-color: #111;
+}
+
+.mobile-nav-toggle{
+    display: none;
 }
 
 .tasa_logo{
@@ -63,17 +70,26 @@ header{
 .nav_links li a:hover{
     color: aqua;
 }
-
+    /*When Displayed at Phone Size*/
+    /*-----------------------------------------------*/
 @media (max-width: 35em){
     .nav_links{
         z-index: 1000;
         position: fixed;
         inset: 0 0 0 30%;
-        background: black;
+        background: #111;
+        
 
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
         background-color: hsl(0 0% 0% / 0.5);
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .nav_links[data-visible = "true"]{
+        transform: translateX(0%);
     }
 
     .nav_links li{
@@ -81,15 +97,25 @@ header{
     }
 
     .mobile-nav-toggle{
+        display:block;
+        background-image: url(../assets/burger-menu.png);
+        background-repeat: no-repeat;
         position: absolute;
-        z-index: 9999;
-        background: red;
-        width: 1rem;
         aspect-ratio: 1;
+        border: 0;
+        z-index: 9999;
+        width: 2rem;
         top: 2rem;
         right: 2rem;
     }
+
+    .button-logo{
+        display: none;
+    }
 }
+    /*-----------------------------------------------*/
+
+
 
 @supports(backdrop-filter: blur(1rem)){
     .nav_links{
@@ -98,11 +124,15 @@ header{
     }
 }
 /*-----------------------------------------------*/
+/*-----------------------------------------------*/
 
+/*TASA Background Image*/
+/*-----------------------------------------------*/
 
 .main-bg{
-    background-image: url('../images/TASA_Pumpkin.jpg');
-    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(../images/TASA_Pumpkin.jpg);
+    /* background-image: url('../images/TASA_Pumpkin.jpg'); */
+    height: 600px;
     
     background-position: center;
     background-repeat: no-repeat;
@@ -110,17 +140,29 @@ header{
 
 }
 
-.officers-bg{
-    background-image: url('../images/officers.JPG');
-    height: 100%;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 70%;
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 50%;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    font-size: 50px;
+    font-family: "Lucida Console", monospace;
+    position: relative;
+    top: 50%;
+    left: 20%;
+    text-align: center;
 }
 
-/* BUTTON EFFECTS*/
+
+
+
+/*-----------------------------------------------*/
+
+
+/* Insta and Facebook BUTTON EFFECTS*/
 /*-----------------------------------------------*/
 .button-logo{
     margin-left: 20px;
@@ -165,4 +207,61 @@ header{
     padding: 5px;
     
 }
+/*-----------------------------------------------*/
+
+/*Officers Page*/
+/*-----------------------------------------------*/
+.officers-bg{
+    background-image: url('../images/officers.JPG');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.officers-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 50%;
+    color: white;
+    font-size: 50px;
+    font-family: "Lucida Console", monospace;
+    position: relative;
+    top: 500px;
+    left: 50%;
+    text-align: center;
+}
+
+/*Start of the Gallery*/
+/*-----------------------------------------------*/
+
+img{
+    display: block;
+}
+
+.officer-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.officer-gallery-item{
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.officer-gallery-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 /*-----------------------------------------------*/

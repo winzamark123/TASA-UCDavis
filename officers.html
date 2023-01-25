@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Win's RESUME</title>
+    <title>TASA @ UC Davis</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="nav.js" defer></script>
 </head>
 <body>
     <header>
         <img class = "tasa_logo" src="./images/TASA_Logo.png" alt="TASA_Logo" height="60px">
+        <button class = "mobile-nav-toggle" 
+        aria-controls="nav_links" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+
+        
         <nav>
-            <ul class = "nav_links">
+            <ul id = "nav_links"
+            data-visible = "false" class = "nav_links" flex>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="officers.html">Officers</a></li>
                 <li><a href="events.html">Events</a></li>
@@ -31,8 +39,28 @@
     
     <script src="https:kit.fontawesome.com/beb98df05a.js" crossorigin = "anonymous"></script>
   
-    <div class="officers-bg">TASA @ UC Davis</div>
-    <div class="description"></div>
+    <div class="officers-bg"> 
+        <span class="officers-title">
+            Our Officers!
+        </span>
+    </div>
+    <div class="container">
+        <div class="officers-gallery">
+            <div class="officers-gallery-item" tabindex="0">
+                <div class="officer-gallery-image">
+                    <img src="/images/Chin_Officer_Profile.png"  alt="Chin's Profile" height="300px">
+                    <img src="/images/Gavin_Officer_Profile.png" alt="Gavin's Profile" height="300px">
+                    <img src="/images/Bow_Officer_Profile.png"  alt="Bow's Profile" height="300px">
+                    <img src="/images/Minnie_Officer_Profile.png"  alt="Minnie's Profile" height="300px">
+                    <img src="/images/Summer_Officer_Profile.png"  alt="Summer's Profile" height="300px">
+                    <img src="/images/Win_Officer_Profile.png"  alt="Win's Profile" height="300px">
+                    <img src="/images/Center_Officer_Profile.png" alt="Center Profile" height = "300px">
+                    <img src="/images/Glory_Officer_Profile.png"  alt="Glory's Profile" height = "300px">
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>

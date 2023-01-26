@@ -265,6 +265,16 @@ header{
 
 }
 
+.cute-icon{
+    position: absolute;
+    top: 30px; left: 33px;
+    z-index: 500;
+}
+
+.cute-icon img{
+    width: 12%;
+
+}
 
 
 
@@ -309,6 +319,8 @@ header{
 
 .profile-preview, .preview{
     display: none;
+    /* transform: translate(-50%, -50%) scale(0); */
+    /* transition: 200ms ease-in-out; */
     padding: 2rem;
     text-align: center;
     margin: 2rem;
@@ -322,7 +334,6 @@ header{
 
 .profile-preview, .active{
     display: inline-block;
-    /*should use scale*/
 }
 
 .fa-times{

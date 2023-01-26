@@ -98,7 +98,6 @@ header{
 
     .mobile-nav-toggle{
         display:block;
-        background-image: url(../assets/burger-menu.png);
         background-repeat: no-repeat;
         position: absolute;
         aspect-ratio: 1;
@@ -269,13 +268,15 @@ header{
 
 
 /*Features of the Image Buttons */
-/* .column:hover img{
-    transform: scale(1.1);
-} */
+/*-----------------------------------------------*/
 
-#ChinProfile:hover, #GavinProfile:hover, #BowProfile:hover, #MinnieProfile:hover, #CenterProfile:hover, #WinProfile:hover, #SummerProfile:hover, #GloryProfile:hover, #EikProfile:hover{
+.columm, img:hover{
     transform: scale(1.1);
 }
+
+/* #ChinProfile:hover, #GavinProfile:hover, #BowProfile:hover, #MinnieProfile:hover, #CenterProfile:hover, #WinProfile:hover, #SummerProfile:hover, #GloryProfile:hover, #EikProfile:hover{
+    transform: scale(1.1);
+} */
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -292,6 +293,48 @@ header{
       max-width: 100%;
     }
   }
+
+.profile-preview{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.profile-preview, .preview{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    width: auto;
+    background: rgba(red, green, blue, alpha);
+}
+
+.profile-preview img{
+    width: 33%;
+}
+
+.profile-preview, .profile.active{
+    display: inline-block;
+}
+
+.fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 1s;
+}
+
+.fa-times:hover{
+    transform: rotate(90deg);
+}
+
 
 
 

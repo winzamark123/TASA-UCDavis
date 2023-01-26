@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASA @ UC Davis</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="nav.js" defer></script>
+    <!-- <script src="nav.js" defer></script> -->
+    <script src="gallery.js" defer></script>
 </head>
 <body>
     <header>
         <img class = "tasa_logo" src="./images/TASA_Logo.png" alt="TASA_Logo" height="60px">
         <button class = "mobile-nav-toggle" 
         aria-controls="nav_links" aria-expanded="false">
+            <i class="fa-solid fa-bars fa"></i>
             <span class="sr-only">Menu</span>
         </button>
 
@@ -44,25 +46,47 @@
             Our Officers!
         </span>
     </div>
+
     <div class="row">
         <div class="column">
-            <img src="/images/Chin_Officer_Profile.png"  id="ChinProfile" >
-            <img src="/images/Gavin_Officer_Profile.png" id="GavinProfile">
-            <img src="/images/Bow_Officer_Profile.png"  id="BowProfile">
+            <!-- <div class="profile"></div> -->
+            <img src="/images/Chin_Officer_Profile.png"  data-name="ChinProfile" >
+            <img src="/images/Gavin_Officer_Profile.png" data-name="GavinProfile">
+            <img src="/images/Bow_Officer_Profile.png"  data-name="BowProfile">
                 
                 
         </div>
         <div class="column">
-            <img src="/images/Minnie_Officer_Profile.png"  id="MinnieProfile">
-            <img src="/images/Center_Officer_Profile.png" id="CenterProfile">
-            <img src="/images/Win_Officer_Profile.png"  id="WinProfile">
+            <img src="/images/Minnie_Officer_Profile.png"  data-name="MinnieProfile">
+            <img src="/images/Center_Officer_Profile.png" data-name="CenterProfile">
+            <img src="/images/Win_Officer_Profile.png"  data-name="WinProfile">
         </div>
         <div class="column">
-            <img src="/images/Summer_Officer_Profile.png"  id="SummerProfile">
-            <img src="/images/Glory_Officer_Profile.png"  id="GloryProfile">
-            <img src="/images/Eik_Officer_Profile.png" id="EikProfile">
+            <img src="/images/Summer_Officer_Profile.png"  data-name="SummerProfile">
+            <img src="/images/Glory_Officer_Profile.png"  data-name="GloryProfile">
+            <img src="/images/Eik_Officer_Profile.png" data-name="EikProfile">
         </div>
 
+    </div>
+
+    <div class="profile-preview">
+        <div class="preview.active" data-target="ChinProfile">
+            <i class="fas fa-times fa-2x"></i>
+            <img src="/images/Chin_Officer_Profile.png">
+            <h3> Chin </h3>
+            <p> Hewwo, I’m Chin, I’m yo media officer so cya in the IG page.<br> 
+                I am a 2nd year biotechnology student. I loveee mango sticky rice
+                and a certified Genshin addict. Ma ha nooiiii✨</p>
+        </div>
+        <div class="preview" data-target="GavinProfile">
+            <i class="fas fa-times fa-2x"></i>
+            <img src="/images/Gavin_Officer_Profile.png">
+            <h3> Gavin </h3>
+            <p> Hi guys, I'm Gavin! a 2nd year communication-psychology major.<br> 
+                I'm excited to be the head of PR and logistics.<br>
+                Fun fact: I'm the only non-STEM member of TASA! So any humanities peeps out there feel free to come join🥲
+            </p>
+        </div>
     </div>
 
 </body>

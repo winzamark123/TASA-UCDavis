@@ -213,7 +213,7 @@ header{
 /*-----------------------------------------------*/
 .officers-bg{
     background-image: url('../images/officers.JPG');
-    height: 100vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,30 +238,62 @@ header{
 /*Start of the Gallery*/
 /*-----------------------------------------------*/
 
-img{
-    display: block;
-}
-
-.officer-gallery{
+.row{
     display: flex;
     flex-wrap: wrap;
-    margin: -1rem -1rem;
-    padding-bottom: 3rem;
+    padding: 0 4px;
+    background-color: #111;
+    overflow: hidden;
 }
 
-.officer-gallery-item{
-    position: relative;
-    flex: 1 0 22rem;
-    margin: 1rem;
-    color: white;
+.column{
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+    overflow: hidden;
+ 
+}
+
+.column img{
+    margin-left: 3rem;
+    aspect-ratio: 1;
+    margin-top: 3rem;
+    vertical-align: middle;
+    width: 80%;
+    height: auto;
     cursor: pointer;
+    transition: transform 1s;
+
 }
 
-.officer-gallery-image{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+
+
+/*Features of the Image Buttons */
+/* .column:hover img{
+    transform: scale(1.1);
+} */
+
+#ChinProfile:hover, #GavinProfile:hover, #BowProfile:hover, #MinnieProfile:hover, #CenterProfile:hover, #WinProfile:hover, #SummerProfile:hover, #GloryProfile:hover, #EikProfile:hover{
+    transform: scale(1.1);
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column{
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
 
 
 /*-----------------------------------------------*/

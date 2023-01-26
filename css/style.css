@@ -267,6 +267,8 @@ header{
 
 
 
+
+
 /*Features of the Image Buttons */
 /*-----------------------------------------------*/
 
@@ -318,8 +320,9 @@ header{
     width: 33%;
 }
 
-.profile-preview, .profile.active{
+.profile-preview, .active{
     display: inline-block;
+    /*should use scale*/
 }
 
 .fa-times{

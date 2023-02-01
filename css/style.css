@@ -36,6 +36,7 @@ body, html {
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
 header{
+    /* position: absolute; */
     list-style: none;
     height: 100px;
     display: flex;
@@ -131,8 +132,8 @@ header{
 .main-bg{
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(../images/TASA_Pumpkin.jpg);
     /* background-image: url('../images/TASA_Pumpkin.jpg'); */
-    height: 600px;
-    
+    /* height: 600px; */
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,7 +146,7 @@ header{
     justify-content: center;
     height: 20vh;
     width: 50%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.4);
     color: white;
     font-size: 50px;
     font-family: "Lucida Console", monospace;
@@ -241,6 +242,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    /* background-color: #ffc1a7; */
     background-color: #111;
     overflow: hidden;
 }
@@ -262,7 +264,7 @@ header{
     height: auto;
     cursor: pointer;
     transition: transform 1s;
-
+    /* filter: drop-shadow(10px 10px 10px #d18f74); */
 }
 
 .cute-icon{
@@ -349,8 +351,69 @@ header{
     transform: rotate(90deg);
 }
 
+/*-----------------------------------------------*/
+/*EVENTS*/
+/*-----------------------------------------------*/
 
+.boba img{
+    width: 100%;
+}
 
-
+.thanksgiving img{
+    width: 100%;
+}
+.karaoke img{
+    width: 100%;
+}
 
 /*-----------------------------------------------*/
+
+footer{
+    background-color: #111;
+    color: white;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-content h3{
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+}
+
+.socials li{
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px;
+
+
+}
+
+
+
+

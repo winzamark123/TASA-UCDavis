@@ -284,7 +284,7 @@ header{
 /*Features of the Image Buttons */
 /*-----------------------------------------------*/
 
-.columm, img:hover{
+.columm img:hover{
     transform: scale(1.1);
 }
 
@@ -355,16 +355,37 @@ header{
 /*EVENTS*/
 /*-----------------------------------------------*/
 
-.boba img{
-    width: 100%;
+.events{
+    background-color: #2f2f5e;
+}
+.events-container{
+    display: grid;
+    padding: 3rem;
+    margin: 1rem;
+    grid-gap: 1rem;
+    border-style: solid;
+    place-items: center;
 }
 
-.thanksgiving img{
+.boba img, .thanksgiving img, .karaoke img{
     width: 100%;
+    border-style: solid;
+    border-width: 1em;
 }
-.karaoke img{
-    width: 100%;
+
+.events-hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
+
+.events-hidden.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 
 /*-----------------------------------------------*/
 

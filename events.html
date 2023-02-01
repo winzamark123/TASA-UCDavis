@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASA @ UC Davis</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="nav.js" defer></script>
+    <script defer src="app.js" ></script>
 </head>
+
 <body>
     <header>
-        <img class = "tasa_logo" src="./images/TASA_Logo.png" alt="TASA_Logo" height="60px">
-        <button class = "mobile-nav-toggle" 
-        aria-controls="nav_links" aria-expanded="false">
+        <img class="tasa_logo" src="./images/TASA_Logo.png" alt="TASA_Logo" height="60px">
+        <button class="mobile-nav-toggle" aria-controls="nav_links" aria-expanded="false">
             <i class="fa-solid fa-bars fa"></i>
             <span class="sr-only">Menu</span>
         </button>
 
-        
+
         <nav>
-            <ul id = "nav_links"
-            data-visible = "false" class = "nav_links" flex>
+            <ul id="nav_links" data-visible="false" class="nav_links" flex>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="officers.html">Officers</a></li>
                 <li><a href="events.html">Events</a></li>
@@ -30,20 +30,29 @@
 
     </header>
 
-    
-    <script src="https:kit.fontawesome.com/beb98df05a.js" crossorigin = "anonymous"></script>
-  
-    <div class="events"> 
-        <div class="karaoke-container">
-            <div class="karaoke">
-                <img src="/images/KaraokeEvent.jpg" alt="">
+
+    <script src="https:kit.fontawesome.com/beb98df05a.js" crossorigin="anonymous"></script>
+
+    <div class="events">
+        <div class="events-container">
+            <div class="events-hidden">
+                <div class="karaoke">
+                    <img src="/images/KaraokeEvent.jpg" alt="">
+                </div>
             </div>
-        </div>
-        <div class="thanksgiving">
-            <img src="/images/ThanksGivingEvent.jpg" alt="">
-        </div>
-        <div class="boba">
-            <img src="/images/BobaEvent.jpg" alt="">
+            
+            <div class="events-hidden">
+                <div class="thanksgiving">
+                    <img src="/images/ThanksGivingEvent.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="events-hidden">
+                <div class="boba">
+                    <img src="/images/BobaEvent.jpg" alt="">
+                </div>
+            </div>
+            
         </div>
     </div>
 
@@ -54,22 +63,25 @@
             <ul class="socials">
                 <li>
                     <a href="https://www.instagram.com/tasa_ucd/">
-                        <button class = "button-logo"><i class = "button_icon fab fa-instagram fa-2x"></i></button>
+                        <button class="button-logo"><i class="button_icon fab fa-instagram fa-2x"></i></button>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/groups/tasaucd/">
-                        <button class = "button-logo"><i class = "button_icon fab fa-facebook fa-2x"></i></button>
+                        <button class="button-logo"><i class="button_icon fab fa-facebook fa-2x"></i></button>
                     </a>
                 </li>
             </ul>
-            
+
         </div>
         <div class="footer-bottom">
-            <p><p>Made with ☕,🍺, and 🧃 :3</p></p>
+            <p>
+            <p>Made with ☕,🍺, and 🧃 :3</p>
+            </p>
         </div>
-        
+
     </footer>
 
 </body>
+
 </html>

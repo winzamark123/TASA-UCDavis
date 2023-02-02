@@ -159,6 +159,16 @@ header{
 .title img{
     margin-top: -15rem;
     width: 100%;
+    animation: Slide_Up 1.4s ease;
+}
+
+@keyframes Slide_Up {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
     
 }
 

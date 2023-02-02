@@ -56,20 +56,24 @@ header{
 
 .nav_links{
     list-style: none;
+    background-color: #111;
 }
 
 .nav_links li{
     display: inline-block;
     padding: 0px 20px;
+    background-color: #111;
 }
 
 .nav_links li a{
     transition: all 0.3s ease 0s;
     color:rgb(255, 255, 255);
+    background-color: #111;
 }
 
 .nav_links li a:hover{
     color: aqua;
+    background-color: #111;
 }
     /*When Displayed at Phone Size*/
     /*-----------------------------------------------*/
@@ -134,6 +138,7 @@ header{
     /* background-image: url('../images/TASA_Pumpkin.jpg'); */
     /* height: 600px; */
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,17 +149,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
-    width: 50%;
+    height: 60rem;
+    width: 100%;
     background-color: rgba(0,0,0,0.4);
     color: white;
     font-size: 50px;
-    font-family: "Lucida Console", monospace;
-    position: relative;
-    top: 50%;
-    left: 20%;
-    text-align: center;
 }
+
+.title img{
+    margin-top: -15rem;
+    width: 100%;
+}
+
+
 
 
 
@@ -365,6 +372,7 @@ header{
     grid-gap: 1rem;
     border-style: solid;
     place-items: center;
+    width: 50rem;
 }
 
 .boba img, .thanksgiving img, .karaoke img{

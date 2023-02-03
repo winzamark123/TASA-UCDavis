@@ -18,9 +18,8 @@
 body, html {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    height: 100%;
 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -44,6 +43,7 @@ header{
     align-items: center;
     padding: 30px 10%;
     background-color: #111;
+    z-index: 9999;
 }
 
 .mobile-nav-toggle{
@@ -69,6 +69,8 @@ header{
     transition: all 0.3s ease 0s;
     color:rgb(255, 255, 255);
     background-color: #111;
+    font-family: 'Aclonia';
+    font-size: 25px;
 }
 
 .nav_links li a:hover{
@@ -172,6 +174,29 @@ header{
     
 }
 
+.about-us{
+    height: auto;
+    background-color: #111;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+}
+.about-us img{
+    place-self: center;
+    padding: 3rem;
+}
+.about-us h3{
+    margin-top: 6rem;
+    color: white;
+    font-family: 'Aclonica';
+    font-size: 40px;
+}
+
+.about-us p {
+    color: white;
+}
+
 
 
 
@@ -238,19 +263,20 @@ header{
 
 }
 
-.officers-title{
+#officers-title{
+    background-color: #111;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
-    width: 50%;
+    width: 100%;
     color: white;
-    font-size: 50px;
-    font-family: "Lucida Console", monospace;
-    position: relative;
-    top: 500px;
-    left: 50%;
     text-align: center;
+    font-family: 'Andale Mono';
+    font-size: 90px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 20%;
 }
 
 /*Start of the Gallery*/
@@ -427,8 +453,9 @@ footer{
 }
 
 .footer-content h3{
-    font-weight: 400;
     line-height: 3rem;
+    font-family: "Aclonica";
+    font-size: 30px;
 }
 
 .socials{

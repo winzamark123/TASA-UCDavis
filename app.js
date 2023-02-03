@@ -59,3 +59,9 @@ document.getElementById('Bow').onclick = OpenFunction;
 document.getElementById('Minnie').onclick = OpenFunction;
 document.getElementById('Summer').onclick = OpenFunction;
 document.getElementById('Eik').onclick = OpenFunction;
+
+let officers = document.getElementById('officers-title');
+window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    officers.style.marginRight = value * 4 +'px';
+})

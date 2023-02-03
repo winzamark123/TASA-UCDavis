@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,18 @@
     <script src="app.js" defer></script>
     <!-- <script src="gallery.js" defer></script> -->
 </head>
+
 <body>
     <header>
-        <img class = "tasa_logo" src="./images/TASA_Logo.png" alt="TASA_Logo" height="60px">
-        <button class = "mobile-nav-toggle" 
-        aria-controls="nav_links" aria-expanded="false">
+        <img class="tasa_logo" src="./images/TASA_Logo.png" alt="TASA_Logo" height="60px">
+        <button class="mobile-nav-toggle" aria-controls="nav_links" aria-expanded="false">
             <i class="fa-solid fa-bars fa"></i>
             <span class="sr-only">Menu</span>
         </button>
 
-        
+
         <nav>
-            <ul id = "nav_links"
-            data-visible = "false" class = "nav_links" flex>
+            <ul id="nav_links" data-visible="false" class="nav_links" flex>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="officers.html">Officers</a></li>
                 <li><a href="events.html">Events</a></li>
@@ -31,14 +31,13 @@
 
     </header>
 
-    
-    <script src="https:kit.fontawesome.com/beb98df05a.js" crossorigin = "anonymous"></script>
-  
-    <div class="officers-bg"> 
-        <span class="officers-title">
-            Our Officers!
-        </span>
+
+    <script src="https:kit.fontawesome.com/beb98df05a.js" crossorigin="anonymous"></script>
+
+    <div class="officers-bg">
+        <h2 id="officers-title">Our Officers!</h2>
     </div>
+   
 
     <div class="cute-icon">
         <img src="/assets/cute.png" alt="">
@@ -47,44 +46,44 @@
     <div class="row">
         <div class="column">
 
-            <div class="profile" id = "Chin" data-name="ChinProfile" onclick = "OpenFunction()">
+            <div class="profile" id="Chin" data-name="ChinProfile" onclick="OpenFunction()">
                 <img src="/images/Chin_Officer_Profile.png">
             </div>
-            
-            <div class="profile" id = "Gavin" data-name="GavinProfile" onclick = "OpenFunction()">
+
+            <div class="profile" id="Gavin" data-name="GavinProfile" onclick="OpenFunction()">
                 <img src="/images/Gavin_Officer_Profile.png">
             </div>
-            
-            <div class="profile" id = "Bow" data-name="BowProfile" onclick="OpenFunction()">
+
+            <div class="profile" id="Bow" data-name="BowProfile" onclick="OpenFunction()">
                 <img src="/images/Bow_Officer_Profile.png">
             </div>
-                
+
         </div>
         <div class="column">
-            <div class="profile" id = "Minnie" data-name = "MinnieProfile" onclick="OpenFunction()">
+            <div class="profile" id="Minnie" data-name="MinnieProfile" onclick="OpenFunction()">
                 <img src="/images/Minnie_Officer_Profile.png">
             </div>
 
             <img src="/images/Center_Officer_Profile.png" data-name="CenterProfile">
 
-            <div class="profile" id = "Win" data-name = "WinProfile" onclick="OpenFunction()">
-                <img src="/images/Win_Officer_Profile.png" >
+            <div class="profile" id="Win" data-name="WinProfile" onclick="OpenFunction()">
+                <img src="/images/Win_Officer_Profile.png">
             </div>
         </div>
 
         <div class="column">
-            <div class="profile" id = "Summer" data-name = "SummerProfile" onclick="OpenFunction()">
+            <div class="profile" id="Summer" data-name="SummerProfile" onclick="OpenFunction()">
                 <img src="/images/Summer_Officer_Profile.png">
             </div>
-            
-            <div class="profile" id = "Glory" data-name = "GloryProfile" onclick="OpenFunction()">
+
+            <div class="profile" id="Glory" data-name="GloryProfile" onclick="OpenFunction()">
                 <img src="/images/Glory_Officer_Profile.png">
             </div>
-            
-            <div class="profile" id = "Eik" data-name = "EikProfile" onclick="OpenFunction()">
+
+            <div class="profile" id="Eik" data-name="EikProfile" onclick="OpenFunction()">
                 <img src="/images/Eik_Officer_Profile.png">
             </div>
-            
+
         </div>
 
     </div>
@@ -92,35 +91,37 @@
     <div class="profile-preview">
 
         <div class="preview" data-target="ChinProfile">
-            <i class="fas fa-times fa-2x" onclick = "CloseFunction()"></i>
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
             <img src="/images/Chin_Officer_Profile.png">
             <h3> Chin </h3>
-            <p> Hewwo, I’m Chin, I’m yo media officer so cya in the IG page.<br> 
+            <p> Hewwo, I’m Chin, I’m yo media officer so cya in the IG page.<br>
                 I am a 2nd year biotechnology student. I loveee mango sticky rice
                 and a certified Genshin addict. Ma ha nooiiii✨</p>
         </div>
         <div class="preview" data-target="GavinProfile">
-            <i class="fas fa-times fa-2x" onclick = "CloseFunction()"></i>
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
             <img src="/images/Gavin_Officer_Profile.png">
             <h3> Gavin </h3>
-            <p> Hi guys, I'm Gavin! a 2nd year communication-psychology major.<br> 
+            <p> Hi guys, I'm Gavin! a 2nd year communication-psychology major.<br>
                 I'm excited to be the head of PR and logistics.<br>
-                Fun fact: I'm the only non-STEM member of TASA! So any humanities peeps out there feel free to come join🥲
+                Fun fact: I'm the only non-STEM member of TASA! So any humanities peeps out there feel free to come
+                join🥲
             </p>
         </div>
 
         <div class="preview" data-target="GloryProfile">
-            <i class="fas fa-times fa-2x" onclick = "CloseFunction()"></i>
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
             <img src="/images/Glory_Officer_Profile.png">
             <h3> Glory</h3>
             <p> haloo ppl! My name is Glory and i am the secretary for this year's TASA. <br>
-                I love eating sushi and strawberries so if I'm cranky, bring me some (maybe some chocolate) and I'll be fine :D <br>
+                I love eating sushi and strawberries so if I'm cranky, bring me some (maybe some chocolate) and I'll be
+                fine :D <br>
                 I also love playing basketball so if you wanna ball feel free to reach out!
             </p>
         </div>
 
         <div class="preview" data-target="WinProfile">
-            <i class="fas fa-times fa-2x" onclick = "CloseFunction()"></i>
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
             <img src="/images/Win_Officer_Profile.png">
             <h3> Win </h3>
             <p> Haloo I'm Win, this year's TASA Activity Director. <br>
@@ -130,17 +131,21 @@
         </div>
 
         <div class="preview" data-target="BowProfile">
-            <i class="fas fa-times fa-2x" onclick = "CloseFunction()"></i>
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
             <img src="/images/Bow_Officer_Profile.png">
             <h3> Bow </h3>
             <p> Hello everyoneee! I’m Bow, and I am the president for TASA at UCD this year! <br>
-                I am a senior studying food science, so as you can tell from my major, I’m a huge foodie 😋 I looove going to new restaurants, cafes and taking food pics, so feel free to hit me up for food adventures! <br>
-                I also love finding new recipes to cook/bake, listening to music, and watching youtube (idk why but I always end up on the weird side of youtube lolll) 🤔Anywayssss I look forward to meeting everyone, so pls come say hiiiii! 💗💗
+                I am a senior studying food science, so as you can tell from my major, I’m a huge foodie 😋 I looove
+                going to new restaurants, cafes and taking food pics, so feel free to hit me up for food adventures!
+                <br>
+                I also love finding new recipes to cook/bake, listening to music, and watching youtube (idk why but I
+                always end up on the weird side of youtube lolll) 🤔Anywayssss I look forward to meeting everyone, so
+                pls come say hiiiii! 💗💗
             </p>
         </div>
 
         <div class="preview" data-target="MinnieProfile">
-            <i class="fas fa-times fa-2x" onclick = "CloseFunction()"></i>
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
             <img src="/images/Minnie_Officer_Profile.png">
             <h3> Minnie </h3>
             <p> Hi! My name is Tanyamon Chupongstimun (Tanya/Minnie) <br>
@@ -150,7 +155,7 @@
         </div>
 
         <div class="preview" data-target="SummerProfile">
-            <i class="fas fa-times fa-2x" onclick = "CloseFunction()"></i>
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
             <img src="/images/Summer_Officer_Profile.png">
             <h3> Summer </h3>
             <p> Position: Creative Director + Photographer <br>
@@ -161,10 +166,11 @@
         </div>
 
         <div class="preview" data-target="EikProfile">
-            <i class="fas fa-times fa-2x" onclick = "CloseFunction()"></i>
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
             <img src="/images/Eik_Officer_Profile.png">
             <h3> Eik </h3>
-            <p> hi all, my name is Alise Chavanapanit, a third-year biological systems engineering major, and I am TASA's vice president. <br>
+            <p> hi all, my name is Alise Chavanapanit, a third-year biological systems engineering major, and I am
+                TASA's vice president. <br>
                 Aside from TASA, I do research and in my free time, I like watching new shows and editing videos.
             </p>
         </div>
@@ -179,22 +185,25 @@
             <ul class="socials">
                 <li>
                     <a href="https://www.instagram.com/tasa_ucd/">
-                        <button class = "button-logo"><i class = "button_icon fab fa-instagram fa-2x"></i></button>
+                        <button class="button-logo"><i class="button_icon fab fa-instagram fa-2x"></i></button>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/groups/tasaucd/">
-                        <button class = "button-logo"><i class = "button_icon fab fa-facebook fa-2x"></i></button>
+                        <button class="button-logo"><i class="button_icon fab fa-facebook fa-2x"></i></button>
                     </a>
                 </li>
             </ul>
-            
+
         </div>
         <div class="footer-bottom">
-            <p><p>Made with ☕,🍺, and 🧃 :3</p></p>
+            <p>
+            <p>Made with ☕,🍺, and 🧃 :3</p>
+            </p>
         </div>
-        
+
     </footer>
 
 </body>
+
 </html>

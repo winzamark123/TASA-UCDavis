@@ -37,7 +37,7 @@ body, html {
 header{
     /* position: absolute; */
     list-style: none;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -70,7 +70,7 @@ header{
     color:rgb(255, 255, 255);
     background-color: #111;
     font-family: 'Aclonia';
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .nav_links li a:hover{
@@ -137,14 +137,11 @@ header{
 
 .main-bg{
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(../images/TASA_Pumpkin.jpg);
-    /* background-image: url('../images/TASA_Pumpkin.jpg'); */
-    /* height: 600px; */
     height: 100%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .title{
@@ -153,7 +150,8 @@ header{
     justify-content: center;
     height: 60rem;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    /* background-color: rgba(0,0,0,0.4); */
+    background: linear-gradient(rgb(0,0,0,0.4), #111);
     color: white;
     font-size: 50px;
 }
@@ -174,28 +172,67 @@ header{
     
 }
 
-.about-us{
-    height: auto;
-    background-color: #111;
-    display: grid;
-    align-items: center;
-    text-align: center;
-    
-}
-.about-us img{
-    place-self: center;
-    padding: 3rem;
-}
-.about-us h3{
-    margin-top: 6rem;
-    color: white;
-    font-family: 'Aclonica';
-    font-size: 40px;
+.separate{
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #111, #111);
 }
 
-.about-us p {
+.about-us-container{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    justify-items: stretch;
+    width: 100%;
+    background-color: #111;
+}
+
+.item2, .item3, .item4{
+    height: auto;
     color: white;
 }
+
+.item2{
+    grid-area: 1/ 1 / 2 / 1;
+    border: solid;
+    overflow-x: hidden;
+    
+}
+
+.item2 img{
+    width: 100%;
+}
+
+.item3{
+    height: 20rem;
+    grid-area: 1 / 2 / 1 / 2;
+    border: solid;
+    align-items: center;
+    text-align: center;
+}
+.item3 h3{
+    font-family: 'Aclonia';
+    padding: 10px;
+    font-size: 50px;
+}
+
+.item3 p{
+    padding: 30px;
+
+}
+
+.item4{
+    grid-area: 1 / 3 / 1 / 3;
+    border: solid;
+}
+
+.item4 img{
+    width: 90%;
+}
+
+
+
 
 
 
@@ -455,7 +492,7 @@ footer{
 .footer-content h3{
     line-height: 3rem;
     font-family: "Aclonica";
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .socials{

@@ -183,6 +183,34 @@ header{
 }
 
 /* ====== ====== ====== ====== ====== ====== ====== ====== ====== */
+.about-us-section{
+    display: grid;
+    place-items: center;
+    background-color: #111;
+}
+.about-us-container{
+    display: block;
+    width: 900px;
+    padding: 0 25px;
+}
+
+.item2{
+    position: absolute;
+    border: solid;   
+    transform: rotate(-30deg); 
+    height: 15%;
+    width: auto;
+    margin-top: 10rem;
+    border: transparent;
+    z-index: 88;
+}
+
+.item2 h3{
+    font-family: 'Aclonia';
+    font-size: 4rem;
+    color: rgb(230, 96, 118);
+}
+
 .card-body{
     display: flex;
     justify-content: center;
@@ -191,7 +219,7 @@ header{
     height: 100vh;
     font-family: "Roboto", sans-serif;
     transition: 0.25s;
-    background: #333;
+    background-color: #111;
     color: white;
 }
 
@@ -283,73 +311,6 @@ header{
   }
  
 /* ====== ====== ====== ====== ====== ====== ====== ====== */
-
-.about-us-container{
-    width: 100%;
-    background-color: #111;
-    align-items: center;
-    text-align: center;
-}
-
-.about-us{
-    display: inline-flex;
-    width: 60rem;
-    background-color: #111;
-    padding: 20px;
-}
-
-.item2, .item3, .item4{
-    height: auto;
-    color: white;
-}
-
-.item2{
-    position: absolute;
-    border: solid;   
-    transform: rotate(280deg); 
-    height: 15%;
-    width: auto;
-    margin-top: 8rem;
-    margin-left: -8rem;
-    border: transparent;
-}
-
-.item2 h3{
-    font-family: 'Aclonia';
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 5rem;
-    color: rgb(230, 96, 118);
-}
-
-.item3{
-    height: 27rem;
-    border: solid;
-    border-radius: 999px;
-    align-items: center;
-    text-align: center;
-    margin-left: 10rem;
-    background-image: url(../images/birthday_photo.png);
-    background-size: 100%;
-
-}
-
-.item3 p{
-    margin: 35px;
-    margin-top: 80px;
-    padding: 30px;
-    font-family: 'Aclonia';
-    font-size: 28px;
-
-}
-
-
-
-
-
-
-
-
 /*-----------------------------------------------*/
 
 

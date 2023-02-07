@@ -72,15 +72,3 @@ window.addEventListener('scroll', function(){
 
 // =============================================================
 
-// ---------------CARDS---------------------
-const card = document.getElementsByClassName('.card')
-
-(".card").click(function () {
-    (".card").removeClass("active");
-    (this).addClass("active");
-});
-
-function toggleCard(){
-    card.classList.toggle('active');
-}
-// =========================================

@@ -15,7 +15,6 @@ nav_Toggle.addEventListener('click', () => {
 });
 
 
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -30,6 +29,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".events-hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
+// ========================= Officers ====================================
 let preveiwContainer = document.querySelector('.profile-preview');
 let previewBox = preveiwContainer.querySelectorAll('.preview');
 
@@ -51,6 +51,7 @@ function OpenFunction(){
 
 }
 
+
 document.getElementById('Chin').onclick = OpenFunction;
 document.getElementById('Gavin').onclick = OpenFunction;
 document.getElementById('Glory').onclick = OpenFunction;
@@ -60,8 +61,26 @@ document.getElementById('Minnie').onclick = OpenFunction;
 document.getElementById('Summer').onclick = OpenFunction;
 document.getElementById('Eik').onclick = OpenFunction;
 
+// =============================================================
+// ===================Parralax Officers================================
+
 let officers = document.getElementById('officers-title');
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     officers.style.marginRight = value * 4 +'px';
 })
+
+// =============================================================
+
+// ---------------CARDS---------------------
+const card = document.getElementsByClassName('.card')
+
+(".card").click(function () {
+    (".card").removeClass("active");
+    (this).addClass("active");
+});
+
+function toggleCard(){
+    card.classList.toggle('active');
+}
+// =========================================

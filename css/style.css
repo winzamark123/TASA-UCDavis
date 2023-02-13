@@ -226,8 +226,8 @@ header{
     transform: rotate(-90deg); 
     height: 15%;
     width: auto;
-    margin-top: 10rem;
-    margin-left: -10rem;
+    margin-top: 12rem;
+    margin-left: -7rem;
     border: transparent;
     z-index: 88;
 }
@@ -375,14 +375,17 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
+    /* color: rgb(230, 96, 118); */
     color: white;
     text-align: center;
-    font-family: 'Andale Mono';
-    font-size: 90px;
+    font-family: 'sans-serif';
+    position: fixed;
+    font-size: 8vw;
     font-weight: 600;
     position: absolute;
-    top: 70%;
-    left: 20%;
+    transform: translateY(-50%);
+    top: 80%;
+    left: 300px;
 }
 
 /*Start of the Gallery*/
@@ -395,6 +398,8 @@ header{
     /* background-color: #ffc1a7; */
     background-color: var(--bg-primary-color);
     overflow: hidden;
+    /* width: 70%; */
+
 }
 
 .column{
@@ -525,7 +530,10 @@ header{
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
+    
 }
+
+
 
 .events-hidden img{
     width: 100%;
@@ -539,6 +547,8 @@ header{
     transform: translateX(0);
     transition-delay: calc(200ms*var(--order));
 }
+
+
 
 
 /*-----------------------------------------------*/
@@ -579,15 +589,19 @@ footer{
 }
 
 
-
 .socials{
     /* border-style: solid; */
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+    /* cursor: pointer; */
+
 
 }
+
+
 
 .socials li{
     color: white;
@@ -599,6 +613,8 @@ footer{
 .button_icon{
     color: rgb(255, 255, 255);
     transition: color 0.5s ease-out;
+    cursor: pointer;
+
 }
 
 .button-logo:hover{

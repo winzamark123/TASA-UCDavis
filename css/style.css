@@ -11,6 +11,8 @@
 
 :root{
     --primary: aqua;
+    --bg-primary-color: #111;
+    --bg-secondary-color: rgb(10, 9, 44);
     --cb: cubic-bezier(.05, .61, .41, .95)
 }
 
@@ -43,7 +45,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: #111;
+    background-color: var(--bg-primary-color);
     z-index: 9999;
 }
 
@@ -57,26 +59,26 @@ header{
 
 .nav_links{
     list-style: none;
-    background-color: #111;
+    background-color: var(--bg-primary-color);
 }
 
 .nav_links li{
     display: inline-block;
     padding: 0px 20px;
-    background-color: #111;
+    background-color: var(--bg-primary-color);
 }
 
 .nav_links li a{
     transition: all 0.3s ease 0s;
     color:rgb(255, 255, 255);
-    background-color: #111;
+    background-color: var(--bg-primary-color);
     font-family: 'Aclonia';
     font-size: 20px;
 }
 
 .nav_links li a:hover{
     color: aqua;
-    background-color: #111;
+    background-color: var(--bg-primary-color);
 }
     /*When Displayed at Phone Size*/
     /*-----------------------------------------------*/
@@ -85,7 +87,7 @@ header{
         z-index: 1000;
         position: fixed;
         inset: 0 0 0 30%;
-        background: #111;
+        background: var(--bg-primary-color);
         
 
         flex-direction: column;
@@ -152,7 +154,7 @@ header{
     height: 60rem;
     width: 100%;
     /* background-color: rgba(0,0,0,0.4); */
-    background: linear-gradient(rgb(0,0,0,0.4), #111);
+    background: linear-gradient(rgb(0,0,0,0.4), var(--bg-primary-color));
     color: white;
     font-size: 50px;
 }
@@ -179,12 +181,12 @@ header{
 .separate{
     height: 100px;
     width: 100%;
-    background: linear-gradient(to top, #111, #111);
+    background: linear-gradient(to top, var(--bg-primary-color), var(--bg-primary-color));
 }
 
 /* ====== ====== ====== ====== ====== ====== ====== ====== ====== */
 .content{
-    background-color: #111;
+    background-color: var(--bg-primary-color);
     display: grid;
     place-items: center;
     text-align: center;
@@ -240,7 +242,7 @@ header{
 .about-us-section{
     display: grid;
     place-items: center;
-    background-color: #111;
+    background-color: var(--bg-primary-color);
 }
 .about-us-container{
     display: block;
@@ -259,7 +261,7 @@ header{
     height: 60vh;
     font-family: "Roboto", sans-serif;
     transition: 0.25s;
-    background-color: #111;
+    background-color: var(--bg-primary-color);
     color: white;
 }
 
@@ -359,7 +361,7 @@ header{
 /*Officers Page*/
 /*-----------------------------------------------*/
 .officers-bg{
-    background-image: url('../images/officers.JPG');
+    background-image: url('../images/Officer_Photos/Sacramento_Trip_Gavin.jpg');
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -368,7 +370,7 @@ header{
 }
 
 #officers-title{
-    background-color: #111;
+    /* background-color: var(--bg-primary-color); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -379,7 +381,7 @@ header{
     font-size: 90px;
     font-weight: 600;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 20%;
 }
 
@@ -391,7 +393,7 @@ header{
     flex-wrap: wrap;
     padding: 0 4px;
     /* background-color: #ffc1a7; */
-    background-color: #111;
+    background-color: var(--bg-primary-color);
     overflow: hidden;
 }
 
@@ -504,14 +506,14 @@ header{
 /*-----------------------------------------------*/
 
 .events{
-    background-color: #2f2f5e;
+    background-color: rgb(155, 202, 226);
 }
 .events-container{
     display: grid;
     padding: 3rem;
-    margin: 1rem;
+    /* margin: 1rem; */
     grid-gap: 1rem;
-    border-style: solid;
+    /* border-style: solid; */
     border-color: white;
     place-items: center;
     width: 60%;
@@ -527,8 +529,8 @@ header{
 
 .events-hidden img{
     width: 100%;
-    border-style: solid;
-    border-width: 0.5rem;
+    /* border-style: solid; */
+    border-width: 0.2rem;
 }
 
 .events-hidden.show{
@@ -623,7 +625,7 @@ footer{
     background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 26px;
-    box-shadow: 0 5px 15px - 5px #111;
+    box-shadow: 0 5px 15px - 5px var(--bg-primary-color);
     cursor: pointer;
     font-family: roboto;
     height: 50px;

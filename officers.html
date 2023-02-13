@@ -34,61 +34,63 @@
     <div class="officers-bg">
         <h2 id="officers-title">Our Officers!</h2>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type = "text/javascript">
-            $(document).on('scroll',function(){
-                $('h2').css("left", Math.max(300 - 0.55*window.scrollY) + "px");
+        <script type="text/javascript">
+            $(document).on('scroll', function () {
+                $('h2').css("left", Math.max(300 - 0.75 * window.scrollY) + "px");
             })
         </script>
     </div>
-   
+
 
     <div class="cute-icon">
         <img src="/assets/cute.png" alt="">
     </div>
 
-    <div class="row">
-        <div class="column">
+    <div class="officers-profiles-container">
+        <div class="row">
+            <div class="column">
 
-            <div class="profile" id="Chin" data-name="ChinProfile" onclick="OpenFunction()">
-                <img src="/images/Officer_Photos/Chin_Officer_Profile.png">
+                <div class="profile" id="Chin" data-name="ChinProfile" onclick="OpenFunction()">
+                    <img src="/images/Officer_Photos/Chin_Officer_Profile.png">
+                </div>
+
+                <div class="profile" id="Gavin" data-name="GavinProfile" onclick="OpenFunction()">
+                    <img src="/images/Officer_Photos/Gavin_Officer_Profile.png">
+                </div>
+
+                <div class="profile" id="Bow" data-name="BowProfile" onclick="OpenFunction()">
+                    <img src="/images/Officer_Photos/Bow_Officer_Profile.png">
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="profile" id="Minnie" data-name="MinnieProfile" onclick="OpenFunction()">
+                    <img src="/images/Officer_Photos/Minnie_Officer_Profile.png">
+                </div>
+
+                <img src="/images/Officer_Photos/Center_Officer_Profile.png" data-name="CenterProfile">
+
+                <div class="profile" id="Win" data-name="WinProfile" onclick="OpenFunction()">
+                    <img src="/images/Officer_Photos/Win_Officer_Profile.png">
+                </div>
             </div>
 
-            <div class="profile" id="Gavin" data-name="GavinProfile" onclick="OpenFunction()">
-                <img src="/images/Officer_Photos/Gavin_Officer_Profile.png">
-            </div>
+            <div class="column">
+                <div class="profile" id="Summer" data-name="SummerProfile" onclick="OpenFunction()">
+                    <img src="/images/Officer_Photos/Summer_Officer_Profile.png">
+                </div>
 
-            <div class="profile" id="Bow" data-name="BowProfile" onclick="OpenFunction()">
-                <img src="/images/Officer_Photos/Bow_Officer_Profile.png">
+                <div class="profile" id="Glory" data-name="GloryProfile" onclick="OpenFunction()">
+                    <img src="/images/Officer_Photos/Glory_Officer_Profile.png">
+                </div>
+
+                <div class="profile" id="Eik" data-name="EikProfile" onclick="OpenFunction()">
+                    <img src="/images/Officer_Photos/Eik_Officer_Profile.png">
+                </div>
+
             </div>
 
         </div>
-        <div class="column">
-            <div class="profile" id="Minnie" data-name="MinnieProfile" onclick="OpenFunction()">
-                <img src="/images/Officer_Photos/Minnie_Officer_Profile.png">
-            </div>
-
-            <img src="/images/Officer_Photos/Center_Officer_Profile.png" data-name="CenterProfile">
-
-            <div class="profile" id="Win" data-name="WinProfile" onclick="OpenFunction()">
-                <img src="/images/Officer_Photos/Win_Officer_Profile.png">
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="profile" id="Summer" data-name="SummerProfile" onclick="OpenFunction()">
-                <img src="/images/Officer_Photos/Summer_Officer_Profile.png">
-            </div>
-
-            <div class="profile" id="Glory" data-name="GloryProfile" onclick="OpenFunction()">
-                <img src="/images/Officer_Photos/Glory_Officer_Profile.png">
-            </div>
-
-            <div class="profile" id="Eik" data-name="EikProfile" onclick="OpenFunction()">
-                <img src="/images/Officer_Photos/Eik_Officer_Profile.png">
-            </div>
-
-        </div>
-
     </div>
 
     <div class="profile-preview">
@@ -201,7 +203,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/tasa_ucd/">
+                    <a href="https://discord.gg/muSnmWPCyM">
                         <button class="button-logo">
                             <i class="button_icon fab fa-discord fa-2x"></i>
                         </button>

@@ -390,6 +390,11 @@ header{
 
 /*Start of the Gallery*/
 /*-----------------------------------------------*/
+.officers-profile-container{
+    display: grid;
+    place-items: center;
+}
+
 
 .row{
     display: flex;
@@ -399,6 +404,8 @@ header{
     background-color: var(--bg-primary-color);
     overflow: hidden;
     /* width: 70%; */
+    /* align-items: center; */
+    /* text-align: center; */
 
 }
 
@@ -548,6 +555,23 @@ header{
     transition-delay: calc(200ms*var(--order));
 }
 
+
+.MooMoo, .Arms{
+    width: 15px;
+    position: absolute;
+    margin-left: 60%;
+}
+
+.Arms{
+    width: 60%;
+    margin-left: 76%;
+    margin-top: -3%;
+}
+
+.MooMoo{
+    transform: rotate(50deg);
+    z-index: -2;
+}
 
 
 

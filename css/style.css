@@ -541,11 +541,11 @@ header{
 }
 
 
-
 .events-hidden img{
     width: 100%;
     /* border-style: solid; */
     border-width: 0.2rem;
+    box-shadow: 7px 7px rgba(0,0,0,0.2);
 }
 
 .events-hidden.show{
@@ -555,23 +555,45 @@ header{
     transition-delay: calc(200ms*var(--order));
 }
 
-
-.MooMoo, .Arms{
-    width: 15px;
-    position: absolute;
-    margin-left: 60%;
+.upcoming {
+    align-items: center;
 }
 
-.Arms{
-    width: 60%;
-    margin-left: 76%;
-    margin-top: -3%;
+.upcoming h3{
+    font-family: "Noto Serif Khojki";
+    font-size: 5rem;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    color: white;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #030303, 
+      4px 4px 0px rgba(0, 0, 0, 0.2);
+      padding: 2%;
+    
+    /* text-decoration: underline rgb(12, 12, 12); */
+
 }
 
-.MooMoo{
-    transform: rotate(50deg);
-    z-index: -2;
+.separate-line{
+    padding-top: 2%;
+
 }
+
+.separate-line hr{
+    width: 80%;
+    height: 5px;
+    margin-left: 10%;
+}
+
+
+
+.thai-tea {
+    padding: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 
 
 

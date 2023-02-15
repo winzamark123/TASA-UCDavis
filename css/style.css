@@ -117,10 +117,6 @@ header{
         top: 2rem;
         right: 2rem;
     }
-
-    .button-logo{
-        display: none;
-    }
 }
     /*-----------------------------------------------*/
 
@@ -185,19 +181,31 @@ header{
 }
 
 /* ====== ====== ====== ====== ====== ====== ====== ====== ====== */
+.about-us-section{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: var(--bg-primary-color);
+    padding: 2% 2%;
+    width: 100%;
+}
+
 .content{
     background-color: var(--bg-primary-color);
     display: grid;
+
     place-items: center;
     text-align: center;
-    height: 30vh;
+
 }
 
 .content h3{
     font-weight: 600;
     font-family: 'Aclonia';
     font-size: 4rem;
+    /* font-size: 3.5vw; */
     color: rgb(230, 96, 118);
+    /* border: solid; */
 
 }
 
@@ -206,8 +214,9 @@ header{
     /* border-color: white; */
     color: white;
     width: 50%;
-    height: 30rem;
+    /* height: 30rem; */
     line-height: 1.55;
+    /* border: solid; */
 }
 
 .line{
@@ -219,6 +228,8 @@ header{
     margin-top: -2rem;
     font-weight: 800;
 }
+
+
 
 .item2{
     position: absolute;
@@ -239,11 +250,7 @@ header{
 }
 
 
-.about-us-section{
-    display: grid;
-    place-items: center;
-    background-color: var(--bg-primary-color);
-}
+
 .about-us-container{
     display: block;
     width: 900px;
@@ -351,6 +358,47 @@ header{
   .cards .card:not(.active) .info {
     opacity: 0;
   }
+
+  @media (max-width: 35em){
+    .content h3{
+        font-weight: 600;
+        font-family: 'Aclonia';
+        font-size: 2rem;
+        /* font-size: 3.5vw; */
+        color: rgb(230, 96, 118);
+        /* border: solid; */
+    
+    }
+    
+    .content p {
+        /* border: solid; */
+        /* border-color: white; */
+        color: white;
+        width: 50%;
+        /* height: 30rem; */
+        line-height: 1.55;
+        font-size: 0;
+        height: 2rem;
+        /* border: solid; */
+    }
+
+    .card-body{
+        display: grid;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 20rem;
+    }
+
+   .cards .card .info .title{
+    display: none;
+   }
+
+  }
+
+
  
 /* ====== ====== ====== ====== ====== ====== ====== ====== */
 /*-----------------------------------------------*/
@@ -522,13 +570,14 @@ header{
 }
 .events-container{
     display: grid;
+    grid-template-columns: 50% 50%;
     padding: 3rem;
     /* margin: 1rem; */
     grid-gap: 1rem;
     /* border-style: solid; */
     border-color: white;
     place-items: center;
-    width: 60%;
+    width: 100%;
 }
 
 

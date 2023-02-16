@@ -206,6 +206,7 @@ header{
     /* font-size: 3.5vw; */
     color: rgb(230, 96, 118);
     /* border: solid; */
+    z-index: 2;
 
 }
 
@@ -216,7 +217,17 @@ header{
     width: 50%;
     /* height: 30rem; */
     line-height: 1.55;
+    z-index: 2;
     /* border: solid; */
+}
+
+.mascot{
+    margin: -5%;
+}
+
+.mascot img{
+    width: 50%;
+    position: relative;
 }
 
 .line{
@@ -228,6 +239,9 @@ header{
     margin-top: -2rem;
     font-weight: 800;
 }
+
+
+
 
 
 
@@ -257,6 +271,10 @@ header{
     padding: 0 25px;
     /* border: solid; */
     /* border-color: white; */
+}
+
+.line{
+    margin-top: 10px;
 }
 
 

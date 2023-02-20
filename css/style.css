@@ -182,6 +182,14 @@ header{
 }
 
 /* ====== ====== ====== ====== ====== ====== ====== ====== ====== */
+.index-container{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-primary-color);
+    overflow: hidden;
+}
 .about-us-section{
     display: flex;
     flex-direction: column;
@@ -189,6 +197,7 @@ header{
     background-color: var(--bg-primary-color);
     padding: 2% 2%;
     width: 100%;
+    max-width: 1300px;
 }
 
 .content{
@@ -213,7 +222,7 @@ header{
 
 .content p {
     color: white;
-    width: 50%;
+    width: 500px;
     font-size: 1em;
     line-height: 1.55;
     z-index: 2;
@@ -370,8 +379,52 @@ header{
   .cards .card:not(.active) .info {
     opacity: 0;
   }
+  
+  @media (min-width: 768px){
+    .mascot-container{
+        display: inline-block;
+    }
+
+    .mascot{
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        /* border: solid white; */
+        margin-top: -50px;
+    }
+
+    .mascot img{
+        left: -100px;
+        top: -120px;
+        position: absolute;
+        width: 140%;
+        transform: rotate(20deg);
+    }
+
+    #Moo_Flag_Hand{
+        top: -100px;
+        -webkit-animation: mover 1s infinite alternate;
+        animation: mover 1s infinite alternate;
+    }
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+  }
 
   @media (max-width: 35em){
+    .index-container{
+        margin-left: -200px;
+    }
+
+    .item2 h3{
+        display: none;
+    }
+
     .content h3{
         font-weight: 600;
         font-family: 'Aclonia';
@@ -483,76 +536,85 @@ header{
 /*-----------------------------------------------*/
 .officers-profile-container{
     display: grid;
+   background-color: var(--bg-primary-color);
+   place-items: center;
+   align-items: center;
+   text-align: center;
+}
+
+.profile-container{
+    display: grid;
     place-items: center;
-}
-
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    /* background-color: #ffc1a7; */
     background-color: var(--bg-primary-color);
-    overflow: hidden;
-    /* width: 70%; */
-    /* align-items: center; */
-    /* text-align: center; */
-
-}
-
-.column{
-    flex: 33%;
-    max-width: 33%;
     padding: 0 4px;
     overflow: hidden;
- 
+    max-width: 1200px;
+    gap: 2rem;
+    /* border: solid white; */
+
 }
 
-.column img{
-    margin-left: 3rem;
+.profile img{
     aspect-ratio: 1;
-    margin-top: 3rem;
-    vertical-align: middle;
-    width: 80%;
-    height: auto;
+    width: 100%;
+    padding: 15px;
     cursor: pointer;
-    transition: transform 1s;
-    /* filter: drop-shadow(10px 10px 10px #d18f74); */
+    transition: 1s;
+
+}
+
+@media (min-width: 768px){
+    .profile-container{
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+    .profile-container{
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    #Center_Photo{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .profile-container{
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #Center_Photo{
+        display: none;
+    }
 }
 
 
+
+.profile img:hover{
+    transform: scale(1.1);
+}
 
 /*Features of the Image Buttons */
 /*-----------------------------------------------*/
-
-.columm img:hover{
-    transform: scale(1.1);
-}
-
-/* #ChinProfile:hover, #GavinProfile:hover, #BowProfile:hover, #MinnieProfile:hover, #CenterProfile:hover, #WinProfile:hover, #SummerProfile:hover, #GloryProfile:hover, #EikProfile:hover{
-    transform: scale(1.1);
-} */
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column{
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
 
 .profile-preview{
     position: fixed;
     top: 0; left: 0;
     width: 100%;
+    height: 80%;
     background: rgba(0,0,0,0.8);
     display: flex;
     align-items: center;
@@ -562,8 +624,6 @@ header{
 
 .profile-preview, .preview{
     display: none;
-    /* transform: translate(-50%, -50%) scale(0); */
-    /* transition: 200ms ease-in-out; */
     padding: 2rem;
     text-align: center;
     margin: 2rem;
@@ -575,7 +635,7 @@ header{
     width: 33%;
 }
 
-.profile-preview, .active{
+.profile-preview.active{
     display: inline-block;
 }
 
@@ -595,9 +655,14 @@ header{
 /*-----------------------------------------------*/
 /*EVENTS*/
 /*-----------------------------------------------*/
-
+.big-events-container{
+    display: grid;
+    place-items: center;
+    background-color: rgb(155, 202, 226);
+}
 .events{
     background-color: rgb(155, 202, 226);
+    max-width: 1800px;
 }
 .events-container{
     display: grid;
@@ -641,7 +706,7 @@ header{
 
 .upcoming h3{
     font-family: "Noto Serif Khojki";
-    font-size: 5rem;
+    font-size: 6vw;
     text-align: center;
     text-rendering: optimizeLegibility;
     color: white;
@@ -652,6 +717,7 @@ header{
       padding: 2%;
     
     /* text-decoration: underline rgb(12, 12, 12); */
+    margin: -15px;
 
 }
 

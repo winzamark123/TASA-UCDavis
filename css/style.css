@@ -676,6 +676,22 @@ header{
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .upcoming{
+        margin-top: 20px;
+    }
+    .events-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        grid-gap: 1rem; 
+        border-color: white;
+        place-items: center;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: -5%;
+    }
+}
 
 .events-hidden{
     opacity: 0;

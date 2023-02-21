@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASA @ UC Davis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img class="tasa_logo" src="./images/Logo/TASA_Logo.png" alt="TASA_Logo" height="60px" />
+        <button class="mobile-nav-toggle" aria-controls="nav_links" aria-expanded="false">
+            <i class="fa-solid fa-bars fa"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+            <ul id="nav_links" data-visible="false" class="nav_links" flex>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="officers.html">Officers</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <script src="https:kit.fontawesome.com/beb98df05a.js" crossorigin="anonymous"></script>
+
+    <div class="officers-bg">
+        <h2 id="officers-title">Our Officers!</h2>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="text.js"></script>
+    </div>
+
+    <div class="officers-profile-container">
+        <div class="profile-container">
+
+            <div class="profile" id="Chin" data-name="ChinProfile" onclick="OpenFunction()">
+                <a href="https://www.instagram.com/p/CkbYx8iPKj8/">
+                    <img src="/images/Officer_Photos/Chin_Officer_Profile.png">
+                </a>
+            </div>
+
+            <div class="profile" id="Gavin" data-name="GavinProfile" onclick="OpenFunction()">
+                <a href="https://www.instagram.com/p/CkbY71RPaT1/">
+                    <img src="/images/Officer_Photos/Gavin_Officer_Profile.png">
+                </a>
+            </div>
+
+            <div class="profile" id="Bow" data-name="BowProfile" onclick="OpenFunction()">
+                <a href="https://www.instagram.com/p/CkbZPa5vhOr/">
+                    <img src="/images/Officer_Photos/Bow_Officer_Profile.png">
+                </a>
+            </div>
+
+            <div class="profile" id="Minnie" data-name="MinnieProfile" onclick="OpenFunction()">
+                <a href="https://www.instagram.com/p/CkbZTxjvlpm/">
+                    <img src="/images/Officer_Photos/Minnie_Officer_Profile.png">
+                </a>
+            </div>
+
+            <div class="profile" id = "Center_Photo">
+                <a href="https://www.instagram.com/tasa_ucd/">
+                    <img src="/images/Officer_Photos/Center_Officer_Profile.png" data-name="CenterProfile">
+                </a>
+            </div>
+
+            <div class="profile" id="Win" data-name="WinProfile" onclick="OpenFunction()">
+                <a href="https://www.instagram.com/p/CkbY4OnPY7i/">
+                    <img src="/images/Officer_Photos/Win_Officer_Profile.png">
+                </a>
+            </div>
+
+            <div class="profile" id="Summer" data-name="SummerProfile" onclick="OpenFunction()">
+                <a href="https://www.instagram.com/p/CkbZEahP-v9/">
+                    <img src="/images/Officer_Photos/Summer_Officer_Profile.png">
+                </a>
+            </div>
+
+            <div class="profile" id="Glory" data-name="GloryProfile" onclick="OpenFunction()">
+                <a href="https://www.instagram.com/p/CkbY03dP2mo/">
+                    <img src="/images/Officer_Photos/Glory_Officer_Profile.png">
+                </a>
+            </div>
+
+            <div class="profile" id="Eik" data-name="EikProfile" onclick="OpenFunction()">
+                <a href="https://www.instagram.com/p/CkbZKUwv3dl/">
+                    <img src="/images/Officer_Photos/Eik_Officer_Profile.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-preview">
+
+        <div class="preview" data-target="ChinProfile">
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
+            <img src="/images/Officer_Photos/Chin_Officer_Profile.png">
+            <h3> Chin </h3>
+            <p> Hewwo, I’m Chin, I’m yo media officer so cya in the IG page.<br>
+                I am a 2nd year biotechnology student. I loveee mango sticky rice
+                and a certified Genshin addict. Ma ha nooiiii✨</p>
+        </div>
+        <div class="preview" data-target="GavinProfile">
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
+            <img src="/images/Officer_Photos/Gavin_Officer_Profile.png">
+            <h3> Gavin </h3>
+            <p> Hi guys, I'm Gavin! a 2nd year communication-psychology major.<br>
+                I'm excited to be the head of PR and logistics.<br>
+                Fun fact: I'm the only non-STEM member of TASA! So any humanities peeps out there feel free to come
+                join🥲
+            </p>
+        </div>
+
+        <div class="preview" data-target="GloryProfile">
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
+            <img src="/images/Officer_Photos/Glory_Officer_Profile.png">
+            <h3> Glory</h3>
+            <p> haloo ppl! My name is Glory and i am the secretary for this year's TASA. <br>
+                I love eating sushi and strawberries so if I'm cranky, bring me some (maybe some chocolate) and I'll be
+                fine :D <br>
+                I also love playing basketball so if you wanna ball feel free to reach out!
+            </p>
+        </div>
+
+        <div class="preview" data-target="WinProfile">
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
+            <img src="/images/Officer_Photos/Win_Officer_Profile.png">
+            <h3> Win </h3>
+            <p> Haloo I'm Win, this year's TASA Activity Director. <br>
+                I'm a 2nd Year majoring in Computer Science and Engineering. <br>
+                I like playing badminton and volleyball so feel free to hmu if you're down for some casual practice!
+            </p>
+        </div>
+
+        <div class="preview" data-target="BowProfile">
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
+            <img src="/images/Officer_Photos/Bow_Officer_Profile.png">
+            <h3> Bow </h3>
+            <p> Hello everyoneee! I’m Bow, and I am the president for TASA at UCD this year! <br>
+                I am a senior studying food science, so as you can tell from my major, I’m a huge foodie 😋 I looove
+                going to new restaurants, cafes and taking food pics, so feel free to hit me up for food adventures!
+                <br>
+                I also love finding new recipes to cook/bake, listening to music, and watching youtube (idk why but I
+                always end up on the weird side of youtube lolll) 🤔Anywayssss I look forward to meeting everyone, so
+                pls come say hiiiii! 💗💗
+            </p>
+        </div>
+
+        <div class="preview" data-target="MinnieProfile">
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
+            <img src="/images/Officer_Photos/Minnie_Officer_Profile.png">
+            <h3> Minnie </h3>
+            <p> Hi! My name is Tanyamon Chupongstimun (Tanya/Minnie) <br>
+                I’m the treasurer. I’m an undergraduate 4th year majoring in food science and yes! <br>
+                I’m a foodie with passion in baking
+            </p>
+        </div>
+
+        <div class="preview" data-target="SummerProfile">
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
+            <img src="/images/Officer_Photos/Summer_Officer_Profile.png">
+            <h3> Summer </h3>
+            <p> Position: Creative Director + Photographer <br>
+                Year: 3rd Year (Junior) <br>
+                Major: Food Science <br>
+                Fact: I love moo satay!
+            </p>
+        </div>
+
+        <div class="preview" data-target="EikProfile">
+            <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
+            <img src="/images/Officer_Photos/Eik_Officer_Profile.png">
+            <h3> Eik </h3>
+            <p> hi all, my name is Alise Chavanapanit, a third-year biological systems engineering major, and I am
+                TASA's vice president. <br>
+                Aside from TASA, I do research and in my free time, I like watching new shows and editing videos.
+            </p>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="/images/Logo/TASA_White_Logo.png" id="box" alt="" />
+
+            <ul class="socials">
+                <li>
+                    <a href="https://www.instagram.com/tasa_ucd/">
+                        <button class="button-logo">
+                            <i class="button_icon fab fa-instagram fa-2x"></i>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/tasaucd/">
+                        <button class="button-logo">
+                            <i class="button_icon fab fa-facebook fa-2x"></i>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/muSnmWPCyM">
+                        <button class="button-logo">
+                            <i class="button_icon fab fa-discord fa-2x"></i>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Made with ☕,🍺, and 🧃 :3</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

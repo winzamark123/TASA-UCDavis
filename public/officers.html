@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASA @ UC Davis</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/4723bfa426.js" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
 </head>
 
@@ -14,8 +15,10 @@
     <header>
         <img class="tasa_logo" src="./images/Logo/TASA_Logo.png" alt="TASA_Logo" height="60px" />
         <button class="mobile-nav-toggle" aria-controls="nav_links" aria-expanded="false">
-            <i class="fa-solid fa-bars fa"></i>
-            <span class="sr-only">Menu</span>
+            <i class="fa-solid fa-bars fa">
+                <span class="sr-only">Menu</span>
+            </i>
+            
         </button>
 
         <nav>
@@ -27,13 +30,14 @@
         </nav>
     </header>
 
-
-    <script src="https:kit.fontawesome.com/beb98df05a.js" crossorigin="anonymous"></script>
-
     <div class="officers-bg">
-        <h2 id="officers-title">Our Officers!</h2>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="text.js"></script>
+        <div class="big-screen">
+            <h2 id="officers-title">Our Officers!</h2>
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="text.js"></script>
+        </div>
+        
+        <h3 id = "officers-title-small">Our Officers!</h3>
     </div>
 
     <div class="officers-profile-container">
@@ -95,7 +99,7 @@
         </div>
     </div>
 
-    <div class="profile-preview">
+    <!-- <div class="profile-preview"
 
         <div class="preview" data-target="ChinProfile">
             <i class="fas fa-times fa-2x" onclick="CloseFunction()"></i>
@@ -183,7 +187,7 @@
         </div>
 
 
-    </div>
+    </div>> -->
 
     <footer>
         <div class="footer-content">
@@ -217,6 +221,8 @@
         <div class="footer-bottom">
             <p>Made with ☕,🍺, and 🧃 :3</p>
         </div>
+
+        
     </footer>
 
 </body>

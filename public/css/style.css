@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 
-*{
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary: aqua;
     --bg-primary-color: #111;
     --bg-secondary-color: rgb(10, 9, 44);
@@ -18,7 +18,8 @@
 
 
 
-body, html {
+body,
+html {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 
@@ -29,7 +30,7 @@ body, html {
 /* Navigation Bar */
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
-header{
+header {
     list-style: none;
     height: 80px;
     display: flex;
@@ -40,43 +41,44 @@ header{
     z-index: 99999;
 }
 
-.mobile-nav-toggle{
+.mobile-nav-toggle {
     display: none;
 }
 
-.tasa_logo{
+.tasa_logo {
     margin-right: auto;
 }
 
-.nav_links{
+.nav_links {
     list-style: none;
 }
 
-.nav_links li{
+.nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav_links li a{
+.nav_links li a {
     transition: all 0.3s ease 0s;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-family: 'Aclonia';
     font-size: 20px;
 }
 
-.nav_links li a:hover{
+.nav_links li a:hover {
     color: aqua;
     background-color: var(--bg-primary-color);
 }
-    /*When Displayed at Phone Size*/
-    /*-----------------------------------------------*/
-@media (max-width: 35em){
-    .nav_links{
+
+/*When Displayed at Phone Size*/
+/*-----------------------------------------------*/
+@media (max-width: 35em) {
+    .nav_links {
         z-index: 1000;
         position: fixed;
         inset: 0 0 0 40%;
         background: var(--bg-primary-color);
-        
+
 
         flex-direction: column;
         /* width: 40%; */
@@ -87,16 +89,16 @@ header{
         transition: transform 350ms ease-out;
     }
 
-    .nav_links[data-visible = "true"]{
+    .nav_links[data-visible="true"] {
         transform: translateX(0%);
     }
 
-    .nav_links li{
+    .nav_links li {
         margin: 3em;
     }
 
-    .mobile-nav-toggle{
-        display:block;
+    .mobile-nav-toggle {
+        display: block;
         background-repeat: no-repeat;
         position: absolute;
         aspect-ratio: 1;
@@ -107,24 +109,26 @@ header{
         right: 2rem;
     }
 }
-    /*-----------------------------------------------*/
+
+/*-----------------------------------------------*/
 
 
 
-@supports(backdrop-filter: blur(1rem)){
-    .nav_links{
+@supports(backdrop-filter: blur(1rem)) {
+    .nav_links {
         background-color: hsl(0 0% 0% / 0.75);
         backdrop-filter: blur(1rem);
     }
 }
+
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
 
 /*TASA Background Image*/
 /*-----------------------------------------------*/
 
-.main-bg{
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(../images/TASA_Pumpkin.jpg);
+.main-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../images/TASA_Pumpkin.jpg);
     height: 100%;
     width: 100%;
     background-position: center;
@@ -132,44 +136,45 @@ header{
     background-size: cover;
 }
 
-.title{
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60rem;
     width: 100%;
-    background: linear-gradient(rgb(0,0,0,0.4), var(--bg-primary-color));
+    background: linear-gradient(rgb(0, 0, 0, 0.4), var(--bg-primary-color));
     color: white;
     font-size: 50px;
 }
 
-.title img{
+.title img {
     margin-top: -15rem;
     width: 100%;
     animation: Slide_Up 1.4s ease;
 }
 
 @keyframes Slide_Up {
-    0%{
+    0% {
         transform: translateY(250px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
-    
+
 }
 
 /* -------------------------------------- */
 /* After Title */
 
-.separate{
+.separate {
     height: 100px;
     width: 100%;
     background: linear-gradient(to top, var(--bg-primary-color), var(--bg-primary-color));
 }
 
 /* ====== ====== ====== ====== ====== ====== ====== ====== ====== */
-.index-container{
+.index-container {
     display: grid;
     place-items: center;
     align-items: center;
@@ -177,7 +182,8 @@ header{
     background-color: var(--bg-primary-color);
     overflow: hidden;
 }
-.about-us-section{
+
+.about-us-section {
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -188,12 +194,12 @@ header{
 }
 
 @media (max-width: 400px) {
-    .about-us-section{
+    .about-us-section {
         margin-left: -50px;
     }
 }
 
-.content{
+.content {
     background-color: var(--bg-primary-color);
     display: grid;
 
@@ -202,7 +208,7 @@ header{
 
 }
 
-.content h3{
+.content h3 {
     font-weight: 600;
     font-family: 'Aclonia';
     font-size: 4em;
@@ -219,12 +225,12 @@ header{
     z-index: 2;
 }
 
-.mascot-container{
+.mascot-container {
     display: none;
 }
 
 
-.line{
+.line {
     content: "";
     height: 3px;
     z-index: 150;
@@ -238,10 +244,10 @@ header{
 
 
 
-.item2{
+.item2 {
     position: absolute;
-    border: solid;   
-    transform: rotate(-90deg); 
+    border: solid;
+    transform: rotate(-90deg);
     height: 15%;
     width: auto;
     margin-top: 12rem;
@@ -250,7 +256,7 @@ header{
     z-index: 88;
 }
 
-.item2 h3{
+.item2 h3 {
     font-family: 'Aclonia';
     font-size: 4rem;
     color: rgb(164, 85, 98);
@@ -258,18 +264,18 @@ header{
 
 
 
-.about-us-container{
+.about-us-container {
     display: block;
     width: 900px;
     padding: 0 25px;
 }
 
-.line{
+.line {
     margin-top: 10px;
 }
 
 
-.card-body{
+.card-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,14 +292,14 @@ header{
     max-width: 800px;
     width: calc(100% - 100px);
     height: 400px;
-  }
-  
-  .cards .card .info .title {
+}
+
+.cards .card .info .title {
     font-weight: bold;
     font-size: 1.2rem;
-  }
-  
-  .cards .card .label .icon {
+}
+
+.cards .card .label .icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,18 +308,18 @@ header{
     background-color: white;
     color: var(--color);
     border-radius: 50%;
-  }
-  
-  .cards .card .label .info {
+}
+
+.cards .card .label .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
     white-space: pre;
     transition: 1s var(--cb);
-  }
-  
-  .cards .card {
+}
+
+.cards .card {
     position: relative;
     min-width: 60px;
     background: var(--bg);
@@ -324,63 +330,61 @@ header{
     cursor: pointer;
     transition: 0.5s var(--cb);
     border-radius: 30px;
-  }
-  
-  .cards .card .label {
+}
+
+.cards .card .label {
     display: flex;
     position: absolute;
     right: 0;
     height: 40px;
     transition: 0.5s var(--cb);
-  }
-  
-  .cards .card.active .label {
+}
+
+.cards .card.active .label {
     bottom: 20px;
     left: 20px;
-  }
-  
-  .cards .card.active {
+}
+
+.cards .card.active {
     flex-grow: 10000;
     background-size: auto 100%;
-  }
-  
-  .cards .card:not(.active) .label {
+}
+
+.cards .card:not(.active) .label {
     bottom: 10px;
     left: 10px;
-  }
-  
-  .cards .card .shadow {
+}
+
+.cards .card .shadow {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100px;
-    background: linear-gradient(
-      0, #0004, transparent
-    );
-  }
-  
-  .cards .card.active .info {
+    background: linear-gradient(0, #0004, transparent);
+}
+
+.cards .card.active .info {
     opacity: 1;
-  }
-  
-  .cards .card:not(.active) .info {
+}
+
+.cards .card:not(.active) .info {
     opacity: 0;
-  }
-  
-  @media (min-width: 768px){
-    .mascot-container{
+}
+
+@media (min-width: 768px) {
+    .mascot-container {
         display: inline-block;
     }
 
-    .mascot{
+    .mascot {
         position: absolute;
         width: 500px;
         height: 300px;
         margin-top: -50px;
     }
 
-    .mascot img{
+    .mascot img {
         left: -100px;
         top: -120px;
         position: absolute;
@@ -388,39 +392,51 @@ header{
         transform: rotate(20deg);
     }
 
-    #Moo_Flag_Hand{
+    #Moo_Flag_Hand {
         top: -100px;
         -webkit-animation: mover 1s infinite alternate;
         animation: mover 1s infinite alternate;
     }
-    @-webkit-keyframes mover {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-20px); }
-    }
-    @keyframes mover {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-20px); }
-    }
-  }
 
-  @media (max-width: 35em){
-    .index-container{
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+}
+
+@media (max-width: 35em) {
+    .index-container {
         margin-left: -200px;
     }
 
-    .item2 h3{
+    .item2 h3 {
         display: none;
     }
 
-    .content h3{
+    .content h3 {
         font-weight: 600;
         font-family: 'Aclonia';
         font-size: 2rem;
         color: rgb(230, 96, 118);
-    
+
     }
 
-    .mascot-container{
+    .mascot-container {
         display: inline-block;
         position: relative;
         height: 10rem;
@@ -429,27 +445,39 @@ header{
         margin-bottom: -5rem;
     }
 
-    .mascot img{
+    .mascot img {
         width: 300%;
         margin-top: -4rem;
         margin-left: -16rem;
-        position:absolute;
+        position: absolute;
     }
 
-    #Moo_Flag_Hand, #Moo_Left_Hand{
+    #Moo_Flag_Hand,
+    #Moo_Left_Hand {
         -webkit-animation: mover 1s infinite alternate;
         animation: mover 1s infinite alternate;
     }
 
     @-webkit-keyframes mover {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-20px); }
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
     }
+
     @keyframes mover {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-20px); }
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
     }
-    
+
     .content p {
         color: white;
         width: 50%;
@@ -458,24 +486,24 @@ header{
         height: 2rem;
     }
 
-    .card-body{
+    .card-body {
         display: grid;
     }
 
-    .cards{
+    .cards {
         display: grid;
         grid-template-columns: 50% 50%;
         width: 20rem;
     }
 
-   .cards .card .info .title{
-    display: none;
-   }
+    .cards .card .info .title {
+        display: none;
+    }
 
-  }
+}
 
 
- 
+
 /* ====== ====== ====== ====== ====== ====== ====== ====== */
 /*-----------------------------------------------*/
 
@@ -484,7 +512,7 @@ header{
 
 /*Officers Page*/
 /*-----------------------------------------------*/
-.officers-bg{
+.officers-bg {
     background-image: url('../images/Officer_Photos/Sacramento_Trip_Gavin.jpg');
     height: 80vh;
     background-position: center;
@@ -493,7 +521,7 @@ header{
 
 }
 
-#officers-title{
+#officers-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -511,16 +539,16 @@ header{
     z-index: 10;
 }
 
-#officers-title-small{
+#officers-title-small {
     display: none;
 }
 
 @media (max-width: 500px) {
-    .big-screen{
+    .big-screen {
         display: none;
     }
 
-    #officers-title-small{
+    #officers-title-small {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -541,15 +569,15 @@ header{
 
 /*Start of the Gallery*/
 /*-----------------------------------------------*/
-.officers-profile-container{
+.officers-profile-container {
     display: grid;
-   background-color: var(--bg-primary-color);
-   place-items: center;
-   align-items: center;
-   text-align: center;
+    background-color: var(--bg-primary-color);
+    place-items: center;
+    align-items: center;
+    text-align: center;
 }
 
-.profile-container{
+.profile-container {
     display: grid;
     place-items: center;
     background-color: var(--bg-primary-color);
@@ -560,7 +588,7 @@ header{
 
 }
 
-.profile img{
+.profile img {
     aspect-ratio: 1;
     width: 100%;
     padding: 15px;
@@ -569,66 +597,68 @@ header{
 
 }
 
-@media (min-width: 768px){
-    .profile-container{
+@media (min-width: 768px) {
+    .profile-container {
         display: grid;
         grid-gap: 16px;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 20px;
     }
 
-    
+
 }
 
 @media (max-width: 800px) {
-    .profile-container{
+    .profile-container {
         display: grid;
         grid-gap: 16px;
         grid-template-columns: 1fr 1fr;
         padding: 20px;
     }
 
-    #Center_Photo{
+    #Center_Photo {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 600px) {
-    .profile-container{
+    .profile-container {
         display: grid;
         grid-gap: 16px;
         grid-template-columns: 1fr;
         padding: 20px;
     }
 
-    #Center_Photo{
+    #Center_Photo {
         display: none;
     }
 }
 
 
 
-.profile img:hover{
+.profile img:hover {
     transform: scale(1.1);
 }
 
 /*Features of the Image Buttons */
 /*-----------------------------------------------*/
 
-.profile-preview{
+.profile-preview {
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 80%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 }
 
-.profile-preview, .preview{
+.profile-preview,
+.preview {
     display: none;
     padding: 2rem;
     text-align: center;
@@ -637,15 +667,15 @@ header{
     background: rgba(red, green, blue, alpha);
 }
 
-.profile-preview img{
+.profile-preview img {
     width: 33%;
 }
 
-.profile-preview.active{
+.profile-preview.active {
     display: inline-block;
 }
 
-.fa-times{
+.fa-times {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
@@ -654,23 +684,25 @@ header{
     transition: transform 1s;
 }
 
-.fa-times:hover{
+.fa-times:hover {
     transform: rotate(90deg);
 }
 
 /*-----------------------------------------------*/
 /*EVENTS*/
 /*-----------------------------------------------*/
-.big-events-container{
+.big-events-container {
     display: grid;
     place-items: center;
     background-color: rgb(155, 202, 226);
 }
-.events{
+
+.events {
     background-color: rgb(155, 202, 226);
     max-width: 1800px;
 }
-.events-container{
+
+.events-container {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 3rem;
@@ -681,18 +713,19 @@ header{
 }
 
 @media (max-width: 768px) {
-    .upcoming{
+    .upcoming {
         margin-top: 20px;
     }
 
-    #Upcoming_Title{
+    #Upcoming_Title {
         margin-bottom: 10px;
     }
-    .events-container{
+
+    .events-container {
         display: grid;
         grid-template-columns: 1fr;
         padding: 3rem;
-        grid-gap: 1rem; 
+        grid-gap: 1rem;
         border-color: white;
         place-items: center;
         width: 80%;
@@ -701,22 +734,22 @@ header{
     }
 }
 
-.events-hidden{
+.events-hidden {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
-    
+
 }
 
 
-.events-hidden img{
+.events-hidden img {
     width: 100%;
     border-width: 0.2rem;
-    box-shadow: 7px 7px rgba(0,0,0,0.2);
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.2);
 }
 
-.events-hidden.show{
+.events-hidden.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
@@ -727,28 +760,28 @@ header{
     align-items: center;
 }
 
-.upcoming h3{
+.upcoming h3 {
     font-family: "Noto Serif Khojki";
     font-size: 6vw;
     text-align: center;
     text-rendering: optimizeLegibility;
     color: white;
     letter-spacing: .05em;
-    text-shadow: 
-      4px 4px 0px #030303, 
-      4px 4px 0px rgba(0, 0, 0, 0.2);
-      padding: 2%;
-    
+    text-shadow:
+        4px 4px 0px #030303,
+        4px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+
     margin: -15px;
 
 }
 
-.separate-line{
+.separate-line {
     padding-top: 2%;
 
 }
 
-.separate-line hr{
+.separate-line hr {
     width: 80%;
     height: 5px;
     margin-left: 10%;
@@ -763,13 +796,11 @@ header{
 }
 
 
-
-
 /*-----------------------------------------------*/
 /*FOOTER*/
 /*-----------------------------------------------*/
 
-footer{
+footer {
     background-color: rgb(0, 0, 0);
     color: white;
     height: 25rem;
@@ -778,25 +809,26 @@ footer{
 
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
 }
-#box{
+
+#box {
     height: 8rem;
     width: auto;
 }
 
-.footer-content img{
+.footer-content img {
     transform: scale(1.5);
     width: 20%;
 }
 
 
-.socials{
+.socials {
     list-style: none;
     display: flex;
     align-items: center;
@@ -806,30 +838,30 @@ footer{
 
 
 
-.socials li{
+.socials li {
     color: white;
 }
 
 /* Insta and Facebook BUTTON EFFECTS*/
 /*-----------------------------------------------*/
-.button_icon{
+.button_icon {
     color: rgb(255, 255, 255);
     transition: color 0.5s ease-out;
     cursor: pointer;
 
 }
 
-.button-logo:hover{
+.button-logo:hover {
     animation: glow 1s infinite alternate;
     text-shadow: 0 0 15px var(--primary);
 }
 
-.button:hover .button_icon{
+.button:hover .button_icon {
     color: var(--primary);
 }
 
-@keyframes glow{
-    0%{
+@keyframes glow {
+    0% {
         box-shadow: 0 0 10px var(--primary);
     }
 
@@ -838,7 +870,7 @@ footer{
     }
 }
 
-.button-logo{
+.button-logo {
     vertical-align: top;
     background-color: rgb(0, 0, 0);
     border: none;
@@ -851,18 +883,15 @@ footer{
     overflow: hidden;
     transition: text-shadow 0.5s ease;
     padding: 5px;
-    
+
 }
+
 /*-----------------------------------------------*/
 
-.footer-bottom{
+.footer-bottom {
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-
-
-
-

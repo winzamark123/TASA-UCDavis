@@ -1,5 +1,5 @@
 # TASA-UCDavis
-title: "<TASA Website/>", 
+title: "TASA Website", 
 link: "tasa-ucdavis.com",
 
 descrip: "A website for the Thai American Student Association at UCSD, built with Plain HTML and CSS deployed using Firebase. 

@@ -6,7 +6,6 @@
 - [Features](#features)
 - [Design](#design)
 - [Tools and Frameworks Used](#tools-and-framework-used)
-- [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [Credits](#credits)
 - [Contact](#contact)

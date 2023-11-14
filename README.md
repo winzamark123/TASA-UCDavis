@@ -19,8 +19,8 @@ Welcome to the repository for Thai American Student Association at UC Davis, bui
 ## Live Demo
 
 Check out our officers and activities in our website: <a href="https://tasa-ucdavis.com/" target = "_blank"> tasa-ucdavis.com </a>  
-<img src="./gitImages/TASA.png" alt="TASA" width="250" height="200"/><img src="./gitImages/Officers.png" alt="Officers" width="250" height="200"/>
-<img src="./gitImages/AboutUs.png" alt="AboutUS" width="250" height="200"/><img src="./gitImages/Events.png" alt="Events" width="250" height="200"/>
+<img src="./gitImages/TASA.png" alt="TASA" width="250"/><img src="./gitImages/Officers.png" alt="Officers" width="250"/>
+<img src="./gitImages/AboutUs.png" alt="AboutUS" width="250" /><img src="./gitImages/Events.png" alt="Events" width="250" />
 
 ## Features
 
